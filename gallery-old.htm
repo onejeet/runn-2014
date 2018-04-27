@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<META NAME="allow-search" CONTENT="yes">
+		<META NAME="revisit-after" CONTENT="daily">
+		<META NAME="Rating" CONTENT="General">
+		<meta name="keywords" content="Runn 2014, Runn, COER, College Of Engineering Roorkee, sport fest,game,annual fest,haridwar sports, roorkee sports,cricket, badminton, table-tennis, basketball,football"/>
+		<META NAME="author" CONTENT="Jitendra Sharma">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>Runn::Annual Sport Event::COER</title>
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/style5.css" />
+		<script src="js/modernizr.custom.js"></script>
+		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>	
+
+	<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.js"></script>
+		
+		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+		
+		
+		
+	</head>
+					<style type="text/css">
+						ul#demo-block{ margin:0 15px 15px 15px; }
+							ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
+							ul#demo-block li a{ color:#eee; font-weight:bold; }
+					</style>
+	<body>
+		<div class="container">
+			<header class="codrops-header" style="opacity:1;">
+
+			</header>
+
+			
+<!-- Menu -------->
+			<nav id="bt-menu" class="bt-menu">
+				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+				<ul>
+					<li><a href="index.htm">Runn - Home</a></li>
+					<li><a href="gallery.htm">Gallery</a></li>
+					<li><a href="events.htm">Events</a></li>
+					<li><a href="https://docs.google.com/forms/d/1Pk5x7CvF4lHrUT09k2j-qIe6XCv51F4aZcrfv6Hl6Jk/viewform" target="_blank">Registration</a></li>
+					<li><a href="accomo.htm">Accommodation</a></li>
+					<li><a href="reach.htm">Reach Us</a></li>
+					<li><a href="contact.htm">Contact Us</a></li>
+					
+				</ul>
+				<ul>
+					
+				    <li><a href="https://www.facebook.com/pages/RUNN-14/258126777691666" target="_blank" class="bt-icon icon-facebook" title="RANN on Facebook">Facebook</a></li>
+					<li><a href="#" class="bt-icon icon-twitter" title="RANN on Twitter">Twitter</a></li>
+					<li><a href="#" class="bt-icon icon-gplus" title="RANN on Google+">Google+</a></li>
+				</ul>
+					<ul>
+				<li><a href="webdesigner.htm" style="color:#fff;">Web Design: Jitendra Sharma</a></li>
+				</ul>
+				
+			</nav><!-- Menu ---------->	
+		</div><!-- /container -->
+
+
+
+<!--Thumbnail Navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+	
+	<div id="thumb-tray" class="load-item">
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+	
+	<!--Time Bar-->
+	<div id="progress-back" class="load-item">
+		<div id="progress-bar"></div>
+	</div>
+	
+	<!--Control Bar-->
+	<div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			
+			<a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+		
+			<!--Slide counter-->
+			<div id="slidecounter">
+				<span class="slidenumber"></span> / <span class="totalslides"></span>
+			</div>
+			
+			<!--Slide captions displayed here-->
+			<div id="slidecaption"></div>
+			
+			<!--Thumb Tray button-->
+			<a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+			
+			<!--Navigation-->
+			<ul id="slide-list"></ul>
+			
+		</div>
+	</div>
+	
+	
+	<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slide_interval          :   3000,		// Length between transitions
+					transition              :   3, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	700,		// Speed of transition
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+														{image : 'gallery/1.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/2.jpg', title : 'RUNN 2014', thumb : ''},  
+														{image : 'gallery/3.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/4.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/5.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/6.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/7.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/8.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/9.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/10.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/11.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/12.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/13.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/14.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/15.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/16.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/17.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/18.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/19.jpg', title : 'RUNN 2014', thumb : ''},
+														{image : 'gallery/20.jpg', title : 'RUNN 2014', thumb : ''}
+														
+												]
+					
+				});
+		    });
+		    
+		</script>
+
+	</body>
+	<script src="js/classie.js"></script>
+	<script src="js/borderMenu.js"></script>
+</html>

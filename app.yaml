@@ -1,0 +1,21 @@
+application: runn-2014
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /(.*\.(gif|png|jpg|ico|js|css|GIF|JPG|ttf))
+  static_files: \1
+  upload: (.*\.(gif|png|jpg|ico|js|css|GIF|JPG|ttf))
+  
+  
+- url: /(.*\.(WOFF))
+  static_files: \1
+  upload: (.*\.(WOFF))
+  
+- url: /(.*\.(DS_Store))
+  static_files: \1
+  upload: (.*\.(DS_Store))
+
+- url: .*
+  script: main.py
